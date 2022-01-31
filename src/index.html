@@ -82,7 +82,7 @@
       class="bg-cover bg-top relative min-h-screen bg-no-repeat flex flex-col items-center justify-center"
     >
       <div class="bg-black absolute inset-0 opacity-60"></div>
-      <div class="absolute container flex items-center justify-between md:m-16">
+      <div class="absolute container flex items-center justify-center lg:justify-between md:m-16">
         <!-- left section -->
         <div class="flex items-center justify-center">
           <div
@@ -117,22 +117,28 @@
 
         <!-- right section -->
         <div class="opacity-10">
-          <img src="../public/images/flame.png" alt="" class="h-[430px]" />
+          <img src="../public/images/flame.png" alt="" class="hidden lg:block h-[430px]" />
         </div>
       </div>
     </section>
-    <section class="bg-zinc-900 text-white">
-      <p class=""><span>become a frutodomster</span></p>
-      <p><span>You would be granted a 2 months free membership (GHS 50.99 per month)</span></p>
-      <p>Skip the selling stress and become a FrutoDomster. Sit back and make money whiles we cover up for you. Feel free and join. Start makeing more money.</p>
-      <button>Become a frutodomster today</button>
-      <p>Current countries we are working in</p>
-      <ul>
-        <li>Ghana</li>
-        <li>USA</li>
-        <li>United Kingdom</li>
-        <li>Nigeria</li>
+    <section class="bg-zinc-900 text-white p-7 space-y-6 md:flex items-center justify-center">
+      <div class="flex flex-col items-center justify-center space-y-6">
+        <p class="font-kanit text-5xl md:text-2xl font-bold capitalize"><span>become a frutodomster</span></p>
+      <p class="font-kanit text-2xl md:text-xl"><span>You would be granted a 2 months free membership (GHS 50.99 per month)</span></p>
+      <p class="font-kanit text-xl md:text-sm text-gray-600">Skip the selling stress and become a FrutoDomster. Sit back and make money whiles we cover up for you. Feel free and join. Start makeing more money.</p>
+      <button class="bg-red-600 p-5 font-kanit capitalize text-xl text-blue-400 tracking-wide w-full hover:bg-white hover:text-red-600 transition duration-[300ms]">Become a frutodomster today</button>
+      </div>
+      
+      <div class="space-y-2">
+        <p class="font-kanit text-3xl capitalize text-center text-transparent bg-clip-text bg-gradient-to-r from-rose-600 via-blue-300 to-yellow-500">Current countries we are working in</p>
+      <ul class="space-y-2 text-lg font-kanit">
+        <li class="hover:text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-yellow-500 to-green-500">Ghana</li>
+        <li class="hover:text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-white">USA</li>
+        <li class="hover:text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-red-900">United Kingdom</li>
+        <li class="hover:text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-white">Nigeria</li>
       </ul>
+      </div>
+      
     </section>
     
 

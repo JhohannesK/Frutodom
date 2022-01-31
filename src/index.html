@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frutodom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/0a2dd49d2c.js"
       crossorigin="anonymous"
@@ -12,19 +18,21 @@
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
   <body>
-    <nav class="text-white bg-zinc-900 md:flex items-center justify-between">
+    <nav
+      class="text-white bg-zinc-900 lg:flex items-center justify-between p-3 md:px-28"
+    >
       <!-- nav header -->
-      <div class="flex items-center justify-between p-3">
+      <div class="flex items-center justify-between">
         <div class="text-6xl">
           <a
             href="#home"
-            class="hover:text-red-500 font-bold transition duration-[0.3s]"
+            class="hover:text-red-500 font-dancing tracking-widest font-bold transition duration-[0.3s]"
             >FrutoDom</a
           >
         </div>
         <div>
           <button
-            class="btn text-3xl text-red-500 hover:rotate-90 transition-all duration-[.3s] border-transparent md:hidden"
+            class="btn text-3xl text-red-500 hover:rotate-90 transition-all duration-[.3s] border-transparent lg:hidden"
           >
             <i class="fas fa-bars"></i>
           </button>
@@ -33,18 +41,18 @@
 
       <!-- navigations -->
       <div
-        class="show-links hide-links space-y-5 flex flex-col items-center justify-center md:h-auto"
+        class="show-links hide-links space-y-5 flex flex-col items-center justify-center lg:flex lg:flex-row lg:gap-16 lg:h-auto"
       >
         <ul
-          class="links text-2xl uppercase space-y-2 md:flex items-center md:space-x-8"
+          class="links text-2xl lg:text-[16px] md:text-[20px] font-Cairo tracking-wide uppercase space-y-2 lg:flex lg:items-center lg:justify-center lg:space-x-8"
         >
-          <li class="nav-links transition-all duration-[300ms]">home</li>
+          <li class="nav-links transition-all duration-[300ms] mt-2">home</li>
           <li class="nav-links transition-all duration-[300ms]">about</li>
           <li class="nav-links transition-all duration-[300ms]">contact</li>
           <li class="nav-links transition-all duration-[300ms]">login</li>
         </ul>
         <!-- Social media -->
-        <ul class="flex items-center space-x-8 text-2xl pb-2">
+        <ul class="flex items-center space-x-8 text-2xl lg:text-[16px] pb-2">
           <li class="nav-links transition duration-[0.3s]">
             <a href="#"><i class="fa fa-facebook"></i></a>
           </li>

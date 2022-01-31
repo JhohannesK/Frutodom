@@ -19,12 +19,14 @@
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
   <body>
+    <!-- Start of navbar -->
     <nav
       class="text-white bg-zinc-900 lg:flex items-center justify-between p-3 md:px-28"
     >
       <!-- nav header -->
       <div class="flex items-center justify-between">
-        <div class="text-6xl">
+        <div class="flex items-center justify-center space-x-3 text-6xl">
+          <img src="../public/images/pine.png" alt="" class="h-12" />
           <a
             href="#home"
             class="hover:text-red-500 font-dancing tracking-widest font-bold transition duration-[0.3s]"
@@ -66,6 +68,48 @@
         </ul>
       </div>
     </nav>
+    <!-- end of navbar -->
+
+    <!-- Contents -->
+    <!-- Hero -->
+    <section
+      style="background-image: url('../public/images/hero.jpg')"
+      class="bg-cover bg-top relative min-h-screen bg-no-repeat flex flex-col items-center justify-center"
+    >
+      <div class="bg-black absolute inset-0 opacity-60"></div>
+      <div class="absolute container flex items-center justify-center">
+        <!-- left section -->
+        <div>
+          <div
+            class="flex flex-col items-center justify-center text-white space-y-7"
+          >
+            <h3>
+              <span class="text-2xl uppercase tracking-widest"
+                >New place to get your fruits</span
+              >
+            </h3>
+            <h1>
+              <p
+                class="text-6xl capitalize font-Cairo tracking-wide text-center font-bold"
+              >
+                Get them fresh <br />
+                and cheaper
+              </p>
+            </h1>
+            <div class="flex gap-10">
+              <a href="#"><span>get started</span></a>
+              <button>Learn more</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- right section -->
+        <div>
+          <img src="../public/images/flame.png" alt="" class="h-80" />
+        </div>
+      </div>
+    </section>
+    <section>asdf</section>
 
     <!-- JavaScript -->
     <script src="index.js"></script>

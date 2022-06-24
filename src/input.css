@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hide-links {
+	@apply hidden;
+}
+
+.nav {
+	@apply hover:text-red-600 transition-all duration-[300ms] cursor-pointer;
+}

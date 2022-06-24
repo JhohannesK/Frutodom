@@ -5,9 +5,15 @@ btn.addEventListener('click', function () {
 	hide.classList.toggle('hide-links');
 });
 
-const ww = window.innerWidth;
-if (ww < 768) {
-	document.getElementById('ss').style.backgroundImage =
-		url('./images/bg1.jpg');
-}
-console.log(ww);
+$(function () {
+	$(window).resize(function () {
+		if ($(this).width() < 750) {
+			$('#ss').css('background-image', "url('./images/bg1.jpg')");
+		} else {
+			// default setting for desktop here...
+			$('#ss').css('background-image', "url('./images/bg2.jpg')");
+		}
+	});
+});
+
+console.log(window.innerWidth);

@@ -1,23 +1,24 @@
 {
-  "name": "frutodom",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css -w"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JhohannesK/Frutodom.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JhohannesK/Frutodom/issues"
-  },
-  "homepage": "https://github.com/JhohannesK/Frutodom#readme",
-  "dependencies": {
-    "tailwindcss": "^3.0.22"
-  }
+	"name": "frutodom",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "tailwindcss -i ./src/input.css -o ./dist/output.css -w",
+		"build": "tailwindcss -o build.css --minify"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JhohannesK/Frutodom.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/JhohannesK/Frutodom/issues"
+	},
+	"homepage": "https://github.com/JhohannesK/Frutodom#readme",
+	"dependencies": {
+		"tailwindcss": "^3.0.22"
+	}
 }

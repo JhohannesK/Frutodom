@@ -3,6 +3,7 @@ const hide = document.querySelector('.hide-links');
 
 btn.addEventListener('click', function () {
 	hide.classList.toggle('hidden');
+	hide.classList.toggle('flex');
 });
 
 $(function () {

@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"dev": "tailwindcss -i ./src/input.css -o ./dist/output.css -w",
-		"build": "tailwindcss -o build.css --minify"
+		"build": "tailwindcss -o ./src/build.css --minify"
 	},
 	"repository": {
 		"type": "git",

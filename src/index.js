@@ -2,7 +2,7 @@ const btn = document.querySelector('.btn');
 const hide = document.querySelector('.hide-links');
 
 btn.addEventListener('click', function () {
-	hide.classList.toggle('hide-links');
+	hide.classList.toggle('hidden');
 });
 
 $(function () {

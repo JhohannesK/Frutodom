@@ -22,22 +22,24 @@
     ></script>
     <!-- CSS -->
     <!-- development -->
-    <!-- <link rel="stylesheet" href="../dist/output.css" /> -->
+    <link rel="stylesheet" href="../dist/output.css" />
     <!-- Production -->
-    <link rel="stylesheet" href="build.css" />
+    <!-- <link rel="stylesheet" href="build.css" /> -->
   </head>
-  <body>
+  <body class="w-screen flex items-center justify-center">
     <!-- TODO: Add smooth scroll -->
 
 
     <!-- Start of navbar -->
-    <nav
-      class="fixed top-0 left-0 right-0 z-10 text-white bg-zinc-900 lg:flex items-center justify-between p-3 md:px-28"
+    <main class="max-w-[1920px]">
+          <nav
+      class="w-screen fixed top-0 left-0 right-0 z-10 bg-zinc-900 flex items-center justify-center"
     >
-      <!-- nav header -->
+    <div class="w-full max-w-[1920px] text-white lg:flex items-center justify-between p-3 md:px-28">
+           <!-- nav header -->
       <div class="flex items-center justify-between">
-        <div class="flex items-center justify-center space-x-3 text-5xl">
-          <img src="./images/fruit.png" alt="" class="h-12" />
+        <div class="flex items-center justify-center space-x-3 text-sm sm:text-lg md:text-3xl">
+          <img src="./images/fruit.png" alt="" class="h-5 lg:h-10" />
           <a
             href="#home"
             class="hover:text-red-500 font-dancing tracking-widest font-bold transition duration-[0.3s]"
@@ -57,15 +59,15 @@
 
       <!-- navigations -->
       <div
-        class="hidden hide-links space-y-5 flex-col items-center justify-center lg:flex lg:flex-row lg:gap-16 lg:h-auto"
+        class="hidden hide-links transition-all duration-500 space-y-5 flex-col items-center justify-center lg:flex lg:flex-row lg:gap-16 lg:h-auto"
       >
         <ul
           class="links text-2xl lg:text-[16px] md:text-[20px] font-Cairo tracking-wide uppercase space-y-2 lg:flex lg:items-center lg:justify-center lg:space-x-8"
         >
-          <li class="nav  mt-2">home</li>
-          <li class="nav hover:text-yellow-400">about</li>
-          <li class="nav">contact</li>
-          <li class="nav hover:text-yellow-400">login</li>
+          <li class="nav  mt-2"><a href="index.html">home</a> </li>
+          <li class="nav hover:text-yellow-400"><a href="#">about</a> </li>
+          <li class="nav"><a href="#>contact</a> </li>
+          <li class="nav hover:text-yellow-400"><a href="#">login</a> </li>
         </ul>
         <!-- Social media -->
         <ul class="flex items-center space-x-8 text-2xl lg:text-[16px] pb-2">
@@ -80,6 +82,8 @@
           </li>
         </ul>
       </div>
+    </div>
+ 
     </nav>
     <!-- end of navbar -->
 
@@ -116,7 +120,7 @@
                 ></a
               >
               <button
-                class="border-2 border-yellow-400 p-5 rounded-md uppercase tracking-wider hover:text-red-600 hover:bg-white transition durationn-[400ms]"
+                class="border-2 border-yellow-400 p-5 rounded-md uppercase tracking-wider hover:text-red-600 hover:bg-white transition duration-[400ms]"
               >
                 Learn more
               </button>
@@ -141,10 +145,10 @@
       <div class="space-y-2 md:border-l md:pl-24 border-slate-600 md:w-[50%]">
         <p class="font-kanit text-3xl capitalize text-center text-transparent bg-clip-text bg-gradient-to-r from-rose-600 via-blue-300 to-yellow-500">Current countries we are working in</p>
       <ul class="space-y-2 text-lg font-kanit">
-        <li class="country_gradient from-red-400 via-yellow-500 to-green-500">Ghana</li>
-        <li class="country_gradient from-red-600 to-white">USA</li>
-        <li class="country_gradient from-blue-600 to-red-900">United Kingdom</li>
-        <li class="country_gradient from-green-400 to-white">Nigeria</li>
+        <li class="hover:text-transparent bg-clip-text bg-gradient-to-r cursor-pointer transition-all duration-500 from-red-400 via-yellow-500 to-green-500">Ghana</li>
+        <li class="hover:text-transparent bg-clip-text bg-gradient-to-r cursor-pointer transition-all duration-500 from-red-600 to-white">USA</li>
+        <li class="hover:text-transparent bg-clip-text bg-gradient-to-r cursor-pointer transition-all duration-500 from-blue-600 to-red-900">United Kingdom</li>
+        <li class="hover:text-transparent bg-clip-text bg-gradient-to-r cursor-pointer transition-all duration-500 from-green-400 to-white">Nigeria</li>
       </ul>
       </div>
       
@@ -159,7 +163,7 @@
       <div class="flex flex-col gap-y-4 sm:flex sm:flex-row gap-5">
         <div class="shadow-xl sm:w-[50%]">
           <div class="py-2 ">
-            <img src="./images/farmland1.jpg" alt="" class="object-cover scale-100 h-[250px] w-full sm:h-[250px] sm:w-full">
+            <img src="./images/farmland1.jpg" alt="" class="object-cover hover:scale-100 transition duration-300 ease-in-out h-[250px] w-full sm:h-[250px] sm:w-full" loading="lazy">
           </div>
           <div class="mt-8 px-4 mb-3">
             <p class="font-Cairo font-semibold tracking-wide text-3xl text-center">AlphaDom Farmland</p>
@@ -169,7 +173,7 @@
         </div>
       <div class="shadow-xl sm:w-[50%]">
         <div class="py-2">
-          <img src="./images/hq.jpg" alt="" class=" object-cover hover:scale-100 h-[250px] w-full sm:h-[250px] sm:w-full">
+          <img src="./images/hq.jpg" alt="" class=" object-cover hover:scale-100 transition duration-300 ease-in-out h-[250px] w-full sm:h-[250px] sm:w-full" loading="lazy" >
         </div>
         <div class="mt-8 px-4 mb-3">
           <p class="font-Cairo font-semibold tracking-wide md:tracking-widest text-3xl text-center">FrutoDom headquarters</p>
@@ -188,17 +192,17 @@
       <div class="flex flex-col gap-y-4 sm:flex sm:flex-row gap-5">
         <div class="shadow-xl sm:w-[50%]">
           <div class="py-2 ">
-            <img src="./images/delivery1.jpg" alt="" class="object-cover h-[250px] w-full sm:h-[250px] sm:w-full">
+            <img src="./images/delivery1.jpg" alt="" class="object-cover h-[250px] w-full sm:h-[250px] sm:w-full" loading="lazy">
           </div>
         </div>
         <div class="shadow-xl sm:w-[50%]">
           <div class="py-2">
-            <img src="./images/delivery2.jpg" alt="" class=" object-cover h-[250px] w-full sm:h-[250px] sm:w-full">
+            <img src="./images/delivery2.jpg" alt="" class=" object-cover h-[250px] w-full sm:h-[250px] sm:w-full" loading="lazy" >
           </div>
         </div>
         <div class="shadow-xl sm:w-[50%]">
         <div class="py-2">
-          <img src="./images/delivery3.jpg" alt="" class=" object-cover h-[250px] w-full sm:h-[250px] sm:w-full">
+          <img src="./images/delivery3.jpg" alt="" class=" object-cover h-[250px] w-full sm:h-[250px] sm:w-full" loading="lazy">
         </div>
       </div>
       </div>
@@ -212,12 +216,12 @@
         <div class="font-dancing text-2xl text-red-700">Clients</div>
       </div>
       <div class="flex flex-wrap items-center justify-between gap-4">
-        <img src="./images/clients/aquasafari.jpg" alt="" class="w-32">
-        <img src="./images/clients/google.png" alt="" class="w-32">
-        <img src="./images/clients/kalyppo_logo.png" alt="" class="w-32">
-        <img src="./images/clients/DONSIMON.png" alt="" class="w-32">
-        <img src="./images/clients/movenpick.png" alt="" class="w-32">
-        <img src="./images/clients/frutelli.png" alt="" class="w-32">
+        <img src="./images/clients/aquasafari.jpg" alt="" class="w-32" loading="lazy">
+        <img src="./images/clients/google.png" alt="" class="w-32" loading="lazy">
+        <img src="./images/clients/kalyppo_logo.png" alt="" class="w-32" loading="lazy">
+        <img src="./images/clients/DONSIMON.png" alt="" class="w-32" loading="lazy">
+        <img src="./images/clients/movenpick.png" alt="" class="w-32" loading="lazy">
+        <img src="./images/clients/frutelli.png" alt="" class="w-32" loading="lazy">
       </div>
     </section>
 
@@ -241,6 +245,8 @@
   <footer>
      a
    </footer>
+    </main>
+
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="index.js"></script>

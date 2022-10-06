@@ -22,16 +22,16 @@
     ></script>
     <!-- CSS -->
     <!-- development -->
-    <!-- <link rel="stylesheet" href="../dist/output.css" /> -->
+    <link rel="stylesheet" href="../dist/output.css" />
     <!-- Production -->
-    <link rel="stylesheet" href="build.css" />
+    <!-- <link rel="stylesheet" href="build.css" /> -->
   </head>
-  <body class="w-screen flex items-center justify-center">
+  <body>
     <!-- TODO: Add smooth scroll -->
 
 
     <!-- Start of navbar -->
-    <main class="max-w-[1920px]">
+    <main class="">
           <nav
       class="w-screen fixed top-0 left-0 right-0 z-10 bg-zinc-900 flex items-center justify-center"
     >
@@ -94,7 +94,7 @@
       id="ss"
       class="w-full bg-cover md:bg-center bg-top relative min-h-screen bg-no-repeat flex flex-col items-center justify-center transition-all duration-500"
     >
-      <div class="bg-black absolute inset-0 opacity-60"></div>
+      <div class="bg-black absolute inset-0 opacity-90"></div>
       <div class="absolute container flex items-center justify-center  md:m-16">
         <!-- left section -->
         <div class="flex items-center justify-center">
@@ -112,7 +112,6 @@
                 Get them fresh <br />
                 and cheaper
               </p>
-            </h1>
             <div class="flex items-center justify-center gap-10">
               <a href="#"
                 ><span class="uppercase hover:text-red-600 transition duration-300"
@@ -120,7 +119,7 @@
                 ></a
               >
               <button
-                class="border-2 border-yellow-400 p-5 rounded-md uppercase tracking-wider hover:text-red-600 hover:bg-white transition duration-[400ms]"
+                class="border-2 border-yellow-400 p-5 rounded-md uppercase tracking-wider hover:text-red-600 hover:bg-white active:animate-bounce transition-all duration-[400ms] ease-linear"
               >
                 Learn more
               </button>
@@ -155,25 +154,25 @@
     </section>
 
     <!-- About -->
-    <section class="w-full bg-white m-5 md:flex md:flex-row">
-      <div class="md:w-[50%] md:pt-16">
+    <section class="bg-white px-5 mt-5 md:flex space-x-3 md:flex-row">
+      <div class="md:w-[40%] md:pt-16">
         <p class="font-Cairo text-3xl font-bold text-center text-zinc-900">About FrutoDom</p>
-        <p class="py-2 font-kanit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quod ratione recusandae omnis voluptates quasi alias! Non laudantium sit veniam architecto rerum eum accusantium aperiam, ea sunt eius maxime nulla aliquid suscipit dignissimos recusandae accusamus illo atque fugiat consectetur quibusdam, alias labore. Earum laborum sapiente assumenda facilis repudiandae quia in?</p>
+        <p class="py-2 font-kanit md:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quod ratione recusandae omnis voluptates quasi alias! Non laudantium sit veniam architecto rerum eum accusantium aperiam, ea sunt eius maxime nulla aliquid suscipit dignissimos recusandae accusamus illo atque fugiat consectetur quibusdam, alias labore. Earum laborum sapiente assumenda facilis repudiandae quia in?</p>
       </div>
-      <div class="flex flex-col gap-y-4 sm:flex sm:flex-row gap-5">
+      <div class="flex flex-col md:w-[60%] gap-y-4 sm:flex sm:flex-row gap-5">
         <div class="shadow-xl sm:w-[50%]">
           <div class="py-2 ">
-            <img src="./images/farmland1.jpg" alt="" class="object-cover hover:scale-100 transition duration-300 ease-in-out h-[250px] w-full sm:h-[250px] sm:w-full" loading="lazy">
+            <img src="./images/farmland1.jpg" alt="" class="object-cover hover:scale-105 transition duration-300 ease-in-out h-[250px] w-full sm:h-[250px] sm:w-full" loading="lazy">
           </div>
           <div class="mt-8 px-4 mb-3">
             <p class="font-Cairo font-semibold tracking-wide text-3xl text-center">AlphaDom Farmland</p>
             <p class="pt-2 font-kanit">Our Farmland <span class="text-red-500">500 acres</span></p>
             <p>Located in <span class="cursor-pointer">Ada, Ghana</span></p>
           </div>
-        </div>
-      <div class="shadow-xl sm:w-[50%]">
+        </div> 
+        <div class="shadow-xl sm:w-[50%]">
         <div class="py-2">
-          <img src="./images/hq.jpg" alt="" class=" object-cover hover:scale-100 transition duration-300 ease-in-out h-[250px] w-full sm:h-[250px] sm:w-full" loading="lazy" >
+          <img src="./images/hq.jpg" alt="" class=" object-cover hover:scale-105 transition duration-300 ease-in-out h-[250px] w-full sm:h-[250px] sm:w-full" loading="lazy" >
         </div>
         <div class="mt-8 px-4 mb-3">
           <p class="font-Cairo font-semibold tracking-wide md:tracking-widest text-3xl text-center">FrutoDom headquarters</p>
@@ -181,10 +180,11 @@
         </div>
       </div>
       </div>
+     
     </section>    
 
     <!-- Deliviery section -->
-    <section class="w-full bg-white m-5 mt-16">
+    <section class="w-full bg-white px-5 mt-16">
       <div class="">
         <p class="font-Cairo text-3xl text-center text-zinc-500">Make a delivery for yourself or your loved ones</p>
         <p class="py-2 font-kanit capitalize text-5xl font-bold text-center">our delivery service</p>
@@ -201,16 +201,16 @@
           </div>
         </div>
         <div class="shadow-xl sm:w-[50%]">
-        <div class="py-2">
-          <img src="./images/delivery3.jpg" alt="" class=" object-cover h-[250px] w-full sm:h-[250px] sm:w-full" loading="lazy">
+          <div class="py-2">
+            <img src="./images/delivery3.jpg" alt="" class=" object-cover h-[250px] w-full sm:h-[250px] sm:w-full" loading="lazy">
+          </div>
         </div>
-      </div>
       </div>
     </section> 
     <!-- End of delivery section -->
 
     <!-- Clients -->
-    <section class=" w-full mt-10 m-3">
+    <section class=" w-full mt-10 px-3">
       <div class="px-5 gap-x-2 flex items-center">
         <div class="border border-yellow-400 w-10"></div>
         <div class="font-dancing text-2xl text-red-700">Clients</div>
